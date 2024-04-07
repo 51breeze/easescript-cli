@@ -1,0 +1,40 @@
+{
+  "name": "esc-cli",
+  "version": "0.0.1",
+  "description": "command-line interface for EaseScript",
+  "main": "lib/index.js",
+  "bin": {
+    "esc": "./bin/esc.js"
+  },
+  "scripts": {
+    "version": "node ./bin/esc.js -V",
+    "esc": "node ./bin/esc.js -f Test.es",
+    "escw": "node ./bin/esc.js -f Test.es --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/51breeze/esc-cli.git"
+  },
+  "keywords": [
+    "esc",
+    "esc-cli",
+    "easescript",
+    "EaseScript",
+    "web"
+  ],
+  "type": "commonjs",
+  "author": "Jun Ye",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/51breeze/esc-cli/issues"
+  },
+  "homepage": "https://github.com/51breeze/esc-cli#readme",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "commander": "~2.11.0",
+    "fs-extra": "^11.2.0",
+    "esbuild": "^0.20.1",
+    "easescript":"latest",
+    "mime-types": "^2.1.35"
+  }
+}
