@@ -17,7 +17,7 @@ program
     return val ? val.split(',') : [];
 })
 .option('-c, --config-file-name [file]', '指定配置文件','es.config.js')
-.option('-o, --output [dir]', '输出路径','./build')
+.option('-o, --output [dir]', '输出路径', null)
 .option('-p, --plugins [javascript,php]', '构建插件',function (val) {
     return val ? val.split(',') : [];
 })
@@ -30,7 +30,7 @@ program
 .option('-t, --types [file.d.es, ...]', '指定描述文件', function (val) {
     return val ? val.split(',') : [];
 })
-.option('-mode, --mode [dev|test|production]', '构建模式是用于生产环境还是测试环境','production')
+.option('-m, --mode [dev|test|production]', '构建模式是用于生产环境还是测试环境','production')
 .option('-format, --format [esm]', '文件输出格式(iife,cjs,esm)','esm')
 .option('-platform, --platform [node]', '运行平台(node,browser,neutral)','node')
 .option('--debug', '是否打印调试信息',false)
@@ -44,7 +44,7 @@ program
 
 program.parse(process.argv);
 
-if( process.argv.length < 3 || !program.file ){
+if( process.argv.length < 2 ){
     program.outputHelp();
     process.exit(1);
 }

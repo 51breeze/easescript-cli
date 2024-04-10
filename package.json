@@ -1,6 +1,6 @@
 {
   "name": "easescript-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "command-line interface for EaseScript",
   "main": "lib/index.js",
   "bin": {
@@ -9,6 +9,7 @@
   "scripts": {
     "version": "node ./bin/esc.js -V",
     "esc": "node ./bin/esc.js -f Test.es",
+    "escn": "node ./bin/esc.js",
     "escw": "node ./bin/esc.js -f Test.es --watch"
   },
   "repository": {
