@@ -16,7 +16,7 @@ program
 .option('-f, --file <file>', '指定需要编译的文件',(val)=>{
     return val ? val.split(',') : [];
 })
-.option('-c, --config-file-name [file]', '指定配置文件','es.config.js')
+.option('-c, --config-file-name [file]', '指定配置文件','es.config')
 .option('-o, --output [dir]', '输出路径', null)
 .option('-p, --plugins [javascript,php]', '构建插件',function (val) {
     return val ? val.split(',') : [];
