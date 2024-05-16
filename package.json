@@ -10,7 +10,8 @@
     "version": "node ./bin/esc.js -V",
     "esc": "node ./bin/esc.js -f Test.es",
     "escn": "node ./bin/esc.js",
-    "escw": "node ./bin/esc.js -f Test.es --watch"
+    "escw": "node ./bin/esc.js -f Test.es --watch",
+    "escm": "node ./bin/esc.js -f test/index.d.es --manifest --scope test --inherit es-javascript"
   },
   "repository": {
     "type": "git",

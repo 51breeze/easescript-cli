@@ -1242,8 +1242,6 @@ declare module web.Application {
 
     declare const name:string;
 
-    export default name;
-
 }
 
 

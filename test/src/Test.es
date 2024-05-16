@@ -32,9 +32,9 @@ public class Test<U,B=string> extends Person<string> implements Iterator<number>
 
     // use static {
     //     /**
-    //     * find pos 
+    //     * find pos  1111222
     //     */
-    //     find(name:string):number;
+    //     find(name:string):number;  
     // }
 
      /**
@@ -42,7 +42,7 @@ public class Test<U,B=string> extends Person<string> implements Iterator<number>
     * the is static 
     */
     get dddddd(){
-        return ''
+        return '5555555555555555555'
     }
 
     /**
@@ -137,7 +137,7 @@ public class Test<U,B=string> extends Person<string> implements Iterator<number>
         Number(1);
         this.computed = true;
         new UIndex({})
-        throw new Error('');
+        throw new Error('999999');
 
         // if( 1 < 2 && 2 > 3 ){
 
@@ -926,10 +926,8 @@ public class Test<U,B=string> extends Person<string> implements Iterator<number>
 
          bsd.fill( 6, 0);
 
-         Array.from([],(name,value)=>name)
-
-         var ns = "map";
-         this[ns]();
+         Array.from([],(name,value)=>name);
+         
 
          var bf = this.avg;
          bf = bf.bind( this );

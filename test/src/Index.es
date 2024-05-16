@@ -37,7 +37,7 @@ class Index{
         const callback:Function = ()=>1;
         callback();
 
-        console.log("===Hello word====");
+        console.log("===Hello word==5555=");
         @Provider( className=com.Person, 'fetch', 'get' );
 
         Index.find(1);

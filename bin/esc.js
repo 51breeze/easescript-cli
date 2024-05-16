@@ -38,6 +38,11 @@ program
 .option('--minify', '启用压缩',false)
 .option('--watch', '监视文件，当有文件变动时重新构建', false)
 .option('--unbundle', '取消捆绑', false)
+.option('--manifest', '构建类型清单', false)
+.option('--scope [name]', '构建类型清单时指定的作用域', null)
+.option('--inherit [plugin-name,...]', `构建类型清单时继承的作用域多个用','隔开`,function (val) {
+    return val ? val.split(',') : [];
+})
 .option('--sourcemap', '生成源码映射', false)
 .option('--esf', '生成源码映射文件', false)
 .option('--exclude-global-class-bundle', '当导入全局类时设置为外部引用，来共享全局类的代码', false)
@@ -67,7 +72,10 @@ const config = [
    "platform",
    "workspace",
    "minify",
-   "unbundle"
+   "unbundle",
+   "manifest",
+   "scope",
+   "inherit",
 ];
 const options = {
     debug:false,
@@ -91,5 +99,10 @@ config.forEach( name=>{
     
 });
 options.commandLineEntrance = true;
-const compile = require('../lib/index.js');
-compile(options);
+if(options.manifest){
+    const manifest = require('../lib/manifest.js');
+    manifest(options);
+}else{
+    const compile = require('../lib/build.js');
+    compile(options);
+}
