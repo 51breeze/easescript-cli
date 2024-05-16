@@ -2,6 +2,7 @@
 /package-lock.json
 /test
 /build
+/types
 yarn.lock
 .babelrc
 .gitattributes
