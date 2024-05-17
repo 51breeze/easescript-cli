@@ -9,6 +9,7 @@
   "scripts": {
     "version": "node ./bin/esc.js -V",
     "esc": "node ./bin/esc.js -f Test.es",
+    "esct": "node ./bin/esc.js -f Test.es --emit-types",
     "escn": "node ./bin/esc.js",
     "escw": "node ./bin/esc.js -f Test.es --watch",
     "escm": "node ./bin/esc.js -f test/index.d.es --manifest --scope test --inherit es-javascript"
@@ -34,9 +35,11 @@
   "dependencies": {
     "chalk": "^4.0.0",
     "commander": "~2.11.0",
-    "fs-extra": "^11.2.0",
+    "easescript": "latest",
     "esbuild": "^0.20.1",
-    "easescript":"latest",
-    "mime-types": "^2.1.35"
+    "fs-extra": "^11.2.0",
+    "less": "^4.2.0",
+    "mime-types": "^2.1.35",
+    "sass": "^1.77.2"
   }
 }

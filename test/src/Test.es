@@ -20,6 +20,8 @@ import  config, {child} from './config.es';
 
 @Embed(logo = '../logo.png')
 @Embed(local = '../local.svg')
+@Embed(Css = '../style.scss')
+@Embed(Css2 = '../style2.less')
 
 /**
 * Test a class
@@ -32,8 +34,8 @@ public class Test<U,B=string> extends Person<string> implements Iterator<number>
 
     // use static {
     //     /**
-    //     * find pos  1111222
-    //     */
+    //     * find pos  11112226666
+    //     */666
     //     find(name:string):number;  
     // }
 
@@ -42,7 +44,7 @@ public class Test<U,B=string> extends Person<string> implements Iterator<number>
     * the is static 
     */
     get dddddd(){
-        return '5555555555555555555'
+        return '555555555555555555511666'
     }
 
     /**
@@ -75,7 +77,7 @@ public class Test<U,B=string> extends Person<string> implements Iterator<number>
         var items369999:any = [1]
         var clone = [...items369999]
 
-        console.log(Imgs, Img, config, child, logo, Social, local)
+        console.log(Imgs, Img, config, child, logo, Social, local  )
         
         return buname
     }
@@ -137,7 +139,7 @@ public class Test<U,B=string> extends Person<string> implements Iterator<number>
         Number(1);
         this.computed = true;
         new UIndex({})
-        throw new Error('999999');
+        throw new Error('=================================');
 
         // if( 1 < 2 && 2 > 3 ){
 

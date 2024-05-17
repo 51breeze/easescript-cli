@@ -39,6 +39,7 @@ program
 .option('--watch', '监视文件，当有文件变动时重新构建', false)
 .option('--unbundle', '取消捆绑', false)
 .option('--manifest', '构建类型清单', false)
+.option('--emit-types', '生成文件类型', false)
 .option('--scope [name]', '构建类型清单时指定的作用域', null)
 .option('--inherit [plugin-name,...]', `构建类型清单时继承的作用域多个用','隔开`,function (val) {
     return val ? val.split(',') : [];
@@ -74,6 +75,7 @@ const config = [
    "minify",
    "unbundle",
    "manifest",
+   "emitTypes",
    "scope",
    "inherit",
 ];
