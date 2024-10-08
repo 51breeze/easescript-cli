@@ -1,6 +1,6 @@
 {
   "name": "easescript-cli",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "command-line interface for EaseScript",
   "main": "lib/index.js",
   "bin": {
