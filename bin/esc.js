@@ -39,6 +39,9 @@ program
 .option('--watch', '监视文件，当有文件变动时重新构建', false)
 .option('--unbundle', '取消捆绑', false)
 .option('--manifest', '构建类型清单', false)
+.option('--typings, --typings [file.d.es,...]', '构建清单时需要提前加载的描述文件', function (val) {
+    return val ? val.split(',') : []; 
+})
 .option('--clear', '清空构建目录', false)
 .option('--emit-types', '生成文件类型', false)
 .option('--scope [name]', '构建类型清单时指定的作用域', null)
@@ -77,6 +80,7 @@ const config = [
    "unbundle",
    "manifest",
    "emitTypes",
+   "typings",
    "scope",
    "inherit",
    "clear",
